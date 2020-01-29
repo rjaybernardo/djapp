@@ -5,5 +5,6 @@ from .models import Movie
 
 def index(request):
     movies = Movie.objects.all()
-    output = ','.join([m.title for m in movies])
-    return render(request, 'index.html', {'movies': movies})
+    return render(request, 'movies/index.html', {'movies': movies})
+    # output = ','.join([m.title for m in movies])
+    # return render(request, 'index.html', {'movies': movies})
