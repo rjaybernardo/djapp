@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Movie
 
 
 def index(request):
-    return HttpResponse('Hello Renielle')
+    movies = Movie.objects.all()
+    output = ','.join([m.title for m in movies])
+    return render(request, 'index.html', {'movies': movies})
