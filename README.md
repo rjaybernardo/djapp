@@ -10,14 +10,17 @@
   _.sqlite3
   .env
 
-$ pipenv install django
-$ pipenv shell
+\$ pipenv install django
+\$ pipenv shell
 \$ django-admin startproject vidly .
 
 - install dependencies
-  $ pipenv install pylint --dev
-$ pipenv install autopep8 --dev
-  \$ pipenv install pylint-django - create .pylintrc file on root folder - load-plugins = pylint-django
+
+\$ pipenv install pylint --dev
+\$ pipenv install autopep8 --dev
+\$ pipenv install pylint-django -
+create .pylintrc file on root folder  
+ load-plugins = pylint-django
 
 $ python manage.py migrate
 $ python manage.py startpp movies
@@ -42,8 +45,8 @@ admin.py
 
     admin.site.register(Genre)
 
-$ python manage.py makemigrations
-$ python manage.py migrate
+\$ python manage.py makemigrations
+\$ python manage.py migrate
 \$ python manage.py createsuperuser
 
 HEROKU
@@ -68,7 +71,8 @@ settings.py
 \$ python manage.py collectstatic # check if it doesnt affect
 
 - create requirements.txt file
-  \$ pip freeze > requirements.txt
+
+\$ pip freeze > requirements.txt
 
 $ heroku login
 $ heroku create
