@@ -87,3 +87,15 @@ note:
 \$ heroku ps:scale web=1
 
 \$ heroku local web
+
+------------------------------------------------------------
+
+create app
+create view
+create urls.py
+    from django.urls import path
+    from . import views
+
+    urlpatterns = [
+        path('',views.index, name='index')
+    ]
